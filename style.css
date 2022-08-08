@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: rgba(235, 212, 245, 0.945);
+}
+
+header {
+    background-image: url(img/nuvem4.jpg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 5rem;
+}
+
+.perfil-header {
+    border-radius: 20%;
+    width: 150px;
+}
+
+.nav-menu ul {
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu li {
+    margin-right: 1.5rem;
+}
+
+.nav-menu a:hover {
+    color: rgb(42, 201, 212);
+    cursor: pointer;
+}
+
+.menu-icon img {
+    width: 30px;
+    height: 30px;
+    border-radius: 2px;
+}
+
+.menu-icon,
+#check {
+    display: none;
+    position: absolute;
+}
+
+h1,
+h2 {
+    font-size: 22px;
+    text-shadow: 7px 4px 5px #55e2f5c0;
+}
+
+main {
+    background-color: rgba(241, 157, 248, 0.767);
+    width: 80%;
+    margin: 20px auto;
+}
+
+a,
+li {
+    font-family: "Roboto", sans-serif;
+    color: black;
+}
+
+.experiencia {
+    color: black;
+}
+
+.dados_profissionais {
+    text-align: center;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.container_reposit {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+footer {
+    background-image: url(img/Areia.jpg);
+    padding: .5rem 2rem;
+    text-align: center;
+}
+
+.msg {
+    color: red;
+}
+
+.email {
+    color: rgb(114, 230, 238);
+}
+
+.rodape {
+    color: rgb(113, 205, 232);
+    font-size: 120%;
+    text-align: center;
+}
+
+.contatos {
+    text-align: center;
+}
+
+.quadro_form {
+    width: 370px;
+    height: 20px;
+    background-color: rgb(130, 192, 233);
+    display: inline-block;
+    align-items: center;
+}
+
+.mensagem {
+    width: 300px;
+    height: 250px;
+    background-color: rgb(132, 211, 235);
+    display: inline-block;
+    align-items: center;
+}
+
+
+@media (max-width:768px) {
+    .check-button {
+        display: block;
+        align-items: center;
+    }
+
+    header {
+        background-image: url(img/nuvem4.jpg);
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        padding: .5rem 2rem;
+    }
+
+    .menu-icon {
+        display: block;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+
+    .nav-menu ul {
+        display: block;
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        background: black;
+        width: 100%;
+        height: 100vh;
+        right: 0;
+    }
+
+    .nav-menu ul li {
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    .rodape {
+        color: rgb(137, 233, 240);
+        font-size: 100%;
+        text-align: center;
+    }
+
+    main {
+        background-color: rgb(204, 243, 241);
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    footer {
+        background-image: url(img/Areia.jpg);
+        width: 100%;
+        padding: .5rem 2rem;
+        text-align: center;
+    }
+}

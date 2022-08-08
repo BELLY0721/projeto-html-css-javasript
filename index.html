@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pr-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>PROJETO - FRONT-END (HTML)</title>
+</head>
+
+<body>
+    <header>
+        <img class="perfil-header" src="img/Ete1.jpg" alt="Uma torta de Banoffee" width="350">
+        <h1>Belinessa Handrisse Saint Aubin</h1>
+        <nav class="nav-menu">
+            <input type="checkbox" id="check">
+            <label for="check" class="check-button">
+                <i class="menu-icon"><img src="img/menu.PNG" alt=""></i>
+
+
+                <ul>
+                    <li><a onclick="clickedLink()" href="#apresentacao">Apresentação</a></li>
+                    <li><a onclick="clickedLink()" href="#formacaoAcademica">Formação Acadêmica</a></li>
+                    <li><a onclick="clickedLink()" href="#projetos">Projetos</a></li>
+                    <li><a onclick="clickedLink()" href="#contatos">Contatos</a></li>
+                </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="dados_profissionais">Back End Student</h2> <br><br>
+        <h2 class="dados_profissionais" id="apresentacao">Apresentação</h2><br>
+        <p class="dados_profissionais">Meu nome é Belinessa, sou haitiana tenho 21 anos sendo a caçula de três irmãos.
+            Aos 9 anos <br>
+            saí do <em>Haiti</em> e fui para a <em>República Dominicana</em> onde passei 5anos, e de lá vim para o
+            <em>Brasil</em> <br>
+            com a minha família, já tenho 6anos no <em>Brasil</em>. Eu sou uma pessoa que gosta de ter objetivos, <br>
+            tanto a longo prazo como curto. Isso me ajuda a fixar metas e correr atrais dessas metas, acredito <br>
+            que nada de bom é adquirido facilmente, precisasse de muito trabalho foco e dedicação. Fazer o curso <br>
+            da Toti e adquirir conhecimento na área de TI é só o começo. <br>
+            Não pretendo parar, não vou parar! <br><br>
+
+        </p>
+        <h2 class="dados_profissionais" id="formacaoAcademica">Formação Acadêmica</h2><br>
+        <p class="dados_profissionais">Desde cedo comecei a me preparar mentalmente para o mercado de trabalho, por isso
+            que estando <br>
+            ainda na escola fundamental comecei a fazer alguns cursos técnicos, como Assistente Administrativo, <br>
+            pacote <em>Office</em> entre outros. No final do ano 2018 terminei a minha escolaridade e no começo do ano
+            <br>
+            de 2019 com 17 anos comecei com a faculdade de administração a qual terminarei em dezembro desse ano.
+        </p><br>
+        <h2 class="dados_profissionais">Experiência Profissional</h2><br>
+        <ol>
+            <li class="dados_profissionais"><strong>C-Trends BPO</strong>- Operadora de Atendimento J1 - A minha função
+                nesse trabalho <br>
+                era dar suporte aos técnicos, ajudar a achar endereço, entrar em contato com o <br>
+                respectivo dono da mercadoria para informar que o técnico está na residência, entre outras coisas. <br>
+                Entrei na empresa como estagiária, antes de acabar meu contrato de estagio fui contratada CLT, <br>
+                no total passei 1 ano e 7 meses lá.
+            </li>
+            <li class="dados_profissionais"><strong>Cadastra</strong> - Nesse exato momento estou estagiando em uma
+                empresa global de marketing,
+                estratégia, <br>
+                tecnologia e dados. Atuo na área de criação sendo uma ponte entre o cliente e nossos profissionais.
+                <br><br>
+            </li>
+        </ol>
+
+        <h2 class="dados_profissionais" id="projetos">Projetos</h2> <br>
+        <section>
+            <div class="dados_profissionais" id="github">
+                <div>
+                    <b><label class="github_api" for="github">Dá só um click no botão abaixo e listar os meus
+                            Repositórios do Github:
+                        </label></b>
+                </div>
+                <div id="repos"></div>
+
+                <button onclick="github(this)" type="submit" id="submitBtn" value="Submit"><b>Listar</b></button>
+            </div><br>
+            <div class="container_reposit" id="listRepos">
+                <div>
+                    <h4>Meus Repositórios</h4>
+                    <p id="nomeGitHub"></p>
+                </div><br>
+                <div>
+                    <h4>Link dos respectivos Repositórios</h4>
+                    <p id="linkGitHub"></p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <h2 id="contatos">Contatos</h2>
+
+
+        <form class="contato" id="myform">
+            <div class="msg"></div><br>
+            <div>
+                <label class="titulo_form" for="nome">NOME:</label><br>
+                <input class="quadro_form" type="text" name="nome" placeholder="Belinessa Saint Aubin" id="nome"
+                    onsubmit='valida()'></input type="submit">
+            </div><br>
+
+            <div>
+                <label class="titulo_form" for="email">E-MAIL:</label><br>
+                <input class="quadro_form" type="email" name="email" id="email" onsubmit='valida()'
+                    placeholder="nome@gmail.com"></input type="submit">
+            </div><br>
+
+            <label class="titulo_form" for="mensagem">MENSAGEM:</label><br>
+            <textarea class="mensagem" name="texto" id="mensagem" cols="30" rows="10" maxlength="100"
+                onsubmit='valida()'>
+            </textarea type="submit"><br>
+        
+            <button onclick="clickedLink()" 
+            class=btn type="submit" id="submitbutton" value="Submit"><b>Enviar</b>
+        </button>
+        </form><br>
+
+        <a href="https://github.com/BELLY0721" target="_blan" fel="noopener">
+            <img src="img/git.jpg" alt="" width="50">
+        </a>
+        <a href="https://www.linkedin.com/in/belinessa-handrisse-saint-aubin-170a581b3/" target="_blan" fel="noopener">
+            <img src="img/linked.png" alt="" width="50">
+        </a>
+        <a href="https://www.instagram.com/belly0721/" target="_blan" fel="noopener">
+            <img src="img/insta.jpg" alt="" width="52">
+        </a>
+        <a href="https://m.facebook.com/BelinessaHandrisse" target="_blan" fel="noopener">
+            <img src="img/face.png" alt="" width="50">
+        </a>
+
+    </footer>
+    
+    <script src="script.js"></script> 
+
+</body>
+
+</html>
